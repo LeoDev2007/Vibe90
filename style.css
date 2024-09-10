@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+}
+
+header{
+    border-bottom: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+header .vibeImg{
+    width: 150px;
+    height: 150px;
+}
+
+header .vibeImg img{
+    width: 100%;
+    height: 100%; 
+}
+
+section.banner{
+    background-image: url(img/banner.png);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom: 2px solid #e74c3c;
+}
+
+section.wiki{
+    height: 70vh;
+    width: 1300px;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+section.wiki h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 100px;
+    max-width: 1200px;
+    
+}
+
+
+.game-img{
+    width: 250px;
+    height: 250px;
+     border: 2px solid #e74c3c; 
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px #000; 
+}
+
+
+
+.game-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+    
+}
+
+.game-img:hover img{
+    opacity: 0.5;
+}
+
+.game-img:hover .overlay{
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.overlay a{
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.game-img:last-child{
+    padding: 10px;
+    display: block;
+}
+
+footer{
+    background-color: #e74c3c;
+    height: 20vh;
+    position: relative;
+    top: 80px;
+}
+
+footer .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4.5em;
+}
+
+footer .footer-container h2{
+    font-size: 40px;
+    color: #fff;
+}
+
+
